@@ -20,10 +20,10 @@ cd ~/Downloads/mail_auto_apply-main
 
 ### (2) 복사 붙여넣기 후 엔터
 ```bash
-python3 gmail-auto-apply.py
+python3 auto_apply.py
 ```
 혹은
 ```bash
-python gmail-auto-apply.py
+python auto_apply.py
 ```
 
