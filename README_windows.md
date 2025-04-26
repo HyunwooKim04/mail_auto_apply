@@ -11,7 +11,7 @@
 
 ### (2) 프로그램 실행
 
-1. 명령프롬포트(cmd)에 복사 붙여넣기 후 엔터
+1. 명령프롬프트(cmd)에 복사 붙여넣기 후 엔터
 ```bash
 cd %HOMEPATH%\Downloads\gmail-auto-apply-main
 ```
