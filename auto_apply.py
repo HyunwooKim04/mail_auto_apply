@@ -14,7 +14,7 @@ APP_PASSWORD = 'jmuo kxqg zcaw cuxs'
 
 # === HTML file path for the start scene
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-HTML_REPORT_PATH = os.path.join(BASE_DIR, "missing-report.html")
+HTML_REPORT_PATH = os.path.join(BASE_DIR, "missing_report.html")
 
 # === State Flags
 startFlag = False
