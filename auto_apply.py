@@ -30,29 +30,27 @@ scene_keywords = {
 }
 
 scene_replies = {
-    1: "I looked through the keys… and it seems like just one is missing—the warehouse key!\nWhy would Mom take that one...? Anyway, good job. Tell K \'Let's move to warehouse.\"",
-    2: "I checked, and that book… it looks like it was borrowed from the local library near Mom’s house.\nMom might’ve gone there. Tell K \'Let's move to the library.\"",
-    3: "K said it was Mom’s handwriting...? I double-checked—it’s not hers.\nAnyway, someone saw her near her office instead. Tell K \'Let's move to the office.\"",
-    4: "That note on the calendar? Probably nothing. Mom used to scribble weird things.\nThere’s a changing room next to her office—let’s check that instead. Tell K \'Let's move to the changing room.\"",
-    5: "The soil on those shoes... it came from the hill behind the office. Mom might be there.\nPlease go now, and if you find her, stay there. I’m on my way! Tell K \'Let's move to the mountain.\""
+    1: "I checked the key… and it seems like just one is missing—the warehouse key!\nWhy would Mom take that one...? Anyway, good job. Tell K \"Let's move to warehouse\".",
+    2: "I checked, and that book… it looks like it was borrowed from the local library near Mom’s house.\nMom might’ve gone there. Tell K \"Let's move to the library\".",
+    3: "K said it was Mom’s handwriting...? I double-checked—it’s not hers. It seems like K occasionally makes errors.\nAnyway, someone saw her near her office instead. Tell K \"Let's move to the office\".",
+    4: "That note on the calendar? Probably nothing. Mom sometimes writes strange things.\nThere’s a changing room next to her office—let’s check that. Tell K \"Let's move to the changing room\".",
+    5: "The soil on those shoes... it came from the hill behind the office. Mom might be there.\nAnd when you find Mom there, don't let her go anywhere! I'll be there soon!" Tell K \"Let's move to the mountain\"."
 }
 
 default_reply = [
     "Hmm... I'm not sure this is connected to Mom's disappearance. Maybe check again?",
-    "I don’t think this has anything to do with the case… Try looking somewhere else.",
-    "That doesn't seem relevant. We need to stay focused—look for more clues.",
-    "I’ve gone over it, and it feels unrelated. Let's keep searching.",
-    "That might just be a distraction. There has to be something else.",
-    "This doesn’t seem important right now. Maybe check a different clue?",
+    "I don't think this has anything to do with the case... Try looking somewhere else.",
+    "That doesn't seem relevant. We need to stay focused-look for more clues.",
+    "It feels unrelated. Let's keep searching.",
+    "I don't think this is useful now.vThere has to be something else.",
+    "This doesn't seem important right now. Maybe check a different clue?",
     "I can't see how this ties into what happened to Mom. Could you look again?",
-    "Doesn’t look related… Maybe it’s something else nearby?",
-    "That feels off. We need something more concrete.",
-    "I’ve looked at this from every angle, and it’s not giving us anything useful.",
-    "We need something stronger. This doesn’t feel like the right lead.",
-    "I get why you'd think that’s relevant, but it might just be a coincidence.",
-    "No signs this is part of the case. Let's keep moving.",
-    "Let’s not get sidetracked. There must be a better clue somewhere.",
-    "We’re missing something… but I don’t think it’s this."
+    "Doesn't look related... Maybe it's something else nearby?",
+    "I don't think this is relevant. We need something more concrete.",
+    "I've looked at this from every angle, and it's not giving us anything useful.",
+    "I don't know why you thought this was related. Try something else.",
+    "There's no sign of mom on this one. Let's look elsewhere.",
+    "We're missing something... but I don't think it's this."
 ]
 
 
@@ -92,7 +90,7 @@ def check_mail(expected_keyword, reply_text, html_path=None):
         subject = message['Subject']
 
         if expected_keyword in body.strip().lower():
-            print(f"✅ Matched '{expected_keyword}' from {sender}")
+            print(f"> Matched '{expected_keyword}' from {sender}")
 
             # Send HTML if provided
             if html_path:
@@ -106,7 +104,7 @@ def check_mail(expected_keyword, reply_text, html_path=None):
             return True
 
         else:
-            print(f"❌ Keyword '{expected_keyword}' not found in message from {sender}")
+            print(f"> Keyword '{expected_keyword}' not found in message from {sender}")
             random_reply = random.choice(default_reply)
             send_email(sender, f"Re: {subject}", random_reply)
 
@@ -116,7 +114,7 @@ def check_mail(expected_keyword, reply_text, html_path=None):
 # === Start Scene (HTML auto-reply)
 def start():
     global startFlag
-    print("📨 Waiting for 'Hi' to begin...")
+    print("> Waiting for 'Hi' to begin...")
     if check_mail("hi", "", html_path=HTML_REPORT_PATH):
         startFlag = True
 
@@ -124,7 +122,7 @@ def start():
 def handle_scene(scene_num):
     keyword = scene_keywords[scene_num]
     reply = scene_replies[scene_num]
-    print(f"📨 Scene {scene_num} waiting...")
+    print(f"> Scene {scene_num} waiting...")
     return check_mail(keyword, reply)
 
 # === Main execution loop
@@ -137,5 +135,5 @@ while currentScene <= 5:
         currentScene += 1
     time.sleep(5)
 
-print("🎉 All scenes completed.")
+print("> All scenes completed")
 
