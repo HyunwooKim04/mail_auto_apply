@@ -1,3 +1,5 @@
+###Please follow these instructions before playing MyGPT.
+
 # mac (파이썬 미리 설치 https://www.python.org/downloads)
 
 ## 다운로드 방법
