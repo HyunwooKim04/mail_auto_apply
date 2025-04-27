@@ -4,7 +4,7 @@
 
 ## 다운로드 방법
 
-### (1)
+### 
 
 1. https://github.com/HyunwooKim04/mail_auto_apply 에서 **Code** 버튼 클릭
 2. **Download ZIP** 선택
