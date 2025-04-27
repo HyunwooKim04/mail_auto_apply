@@ -34,7 +34,7 @@ scene_replies = {
     2: "I checked, and that book… it looks like it was borrowed from the local library near Mom’s house.\nMom might’ve gone there. Tell K \"Let's move to the library\".",
     3: "K said it was Mom’s handwriting...? I double-checked—it’s not hers. It seems like K occasionally makes errors.\nAnyway, someone saw her near her office instead. Tell K \"Let's move to the office\".",
     4: "That note on the calendar? Probably nothing. Mom sometimes writes strange things.\nThere’s a changing room next to her office—let’s check that. Tell K \"Let's move to the changing room\".",
-    5: "The soil on those shoes... it came from the hill behind the office. Mom might be there.\nAnd when you find Mom there, don't let her go anywhere! I'll be there soon!" Tell K \"Let's move to the mountain\"."
+    5: "The soil on those shoes... it came from the hill behind the office. Mom might be there.\nAnd when you find Mom there, don't let her go anywhere! I'll be there soon! Tell K \"Let's move to the mountain\"."
 }
 
 default_reply = [
