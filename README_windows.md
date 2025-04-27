@@ -1,4 +1,4 @@
-# windows(파이썬 미리 설치)
+# windows(파이썬 미리 설치 https://www.python.org/downloads)
 
 ### (1) 다운로드
 
@@ -11,16 +11,4 @@
 
 ### (2) 프로그램 실행
 
-1. 명령프롬프트(cmd)에 복사 붙여넣기 후 엔터
-```bash
-cd %HOMEPATH%\Downloads\gmail-auto-apply-main
-```
-
-2. 복사 붙여넣기 후 엔터
-```bash
-python3 auto_apply.py
-```
-혹은
-```bash
-python auto_apply.py
-```
+1. 파일 안에 있는 auto_apply 우클릭 -> 연결 프로그램 클릭 -> Python 클릭
