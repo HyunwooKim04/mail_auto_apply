@@ -1,4 +1,4 @@
-# mac (파이썬 미리 설치)
+# mac (파이썬 미리 설치 https://www.python.org/downloads)
 
 ## 다운로드 방법
 
@@ -13,17 +13,5 @@
 
 ## 프로그램 실행 방법
 
-### (1) Launchpad -> 터미널에 복사 붙여넣기 후 엔터
-```bash
-cd ~/Downloads/mail_auto_apply-main
-```
-
-### (2) 복사 붙여넣기 후 엔터
-```bash
-python3 auto_apply.py
-```
-혹은
-```bash
-python auto_apply.py
-```
+### 폴더 안에 있는 auto_apply.py 우클릭 -> 다음으로 열기 -> Python Launcher
 
