@@ -1,4 +1,4 @@
-###Please follow these instructions before playing MyGPT.
+### Please follow these instructions before playing MyGPT.
 
 # mac (파이썬 미리 설치 https://www.python.org/downloads)
 
