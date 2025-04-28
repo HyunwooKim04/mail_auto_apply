@@ -17,3 +17,6 @@
 
 ### 폴더 안에 있는 auto_apply.py 우클릭 -> 다음으로 열기 -> Python Launcher
 
+
+
+### Gmail을 사용해주세요
