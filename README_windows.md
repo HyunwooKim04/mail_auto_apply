@@ -1,18 +1,26 @@
-# windows(파이썬 미리 설치 https://www.python.org/downloads)
+# 🪟 Instructions for Windows Users
 
-### (1) 다운로드
+## ✅ Prerequisites
 
-1. https://github.com/HyunwooKim04/mail_auto_apply 에서 **Code** 버튼 클릭
-2. **Download ZIP** 선택
-3. mail_auto_apply-main.zip 파일이 다운로드됩니다.
-4. 다운로드 파일에서 압축을 해체하면 'mail_auto_apply-mail' 파일이 생성됩니다
+- Make sure Python is installed: [Download Python](https://www.python.org/downloads)
 
 ---
 
-### (2) 프로그램 실행
+## 📥 (1) Download Instructions
 
-1. 파일 안에 있는 auto_apply 우클릭 -> 연결 프로그램 클릭 -> Python 클릭
+1. Go to the following GitHub repository:  
+   [https://github.com/HyunwooKim04/mail_auto_apply](https://github.com/HyunwooKim04/mail_auto_apply)
+2. Click the **Code** button.
+3. Select **Download ZIP**.
+4. Once the file `mail_auto_apply-main.zip` is downloaded, extract it.
+5. After extraction, a folder named `mail_auto_apply-main` will be created.
 
+---
 
+## ▶️ (2) How to Run the Program
 
-### Gmail을 사용해주세요
+1. Open the `mail_auto_apply-main` folder.
+2. Right-click the `auto_apply.py` file.
+3. Click **Open with** → Select **Python** from the list of programs.
+
+> ⚠️ Please make sure you are using **Gmail** for this program to work properly.
