@@ -1,22 +1,26 @@
-### Please follow these instructions before playing MyGPT.
+# 📌 Instructions Before Playing MyGPT (macOS)
 
-# mac (파이썬 미리 설치 https://www.python.org/downloads)
+## ✅ Prerequisites
 
-## 다운로드 방법
-
-### 
-
-1. https://github.com/HyunwooKim04/mail_auto_apply 에서 **Code** 버튼 클릭
-2. **Download ZIP** 선택
-3. `mail_auto_apply-main.zip` 파일이 다운로드됩니다.
-3. 다운로드 파일에서 압축을 해체하면 'mail_auto_apply-main' 파일이 생성됩니다
+- Make sure Python is installed: [Download Python](https://www.python.org/downloads)
 
 ---
 
-## 프로그램 실행 방법
+## 📥 Download Instructions
 
-### 폴더 안에 있는 auto_apply.py 우클릭 -> 다음으로 열기 -> Python Launcher
+1. Go to the following GitHub repository:  
+   [https://github.com/HyunwooKim04/mail_auto_apply](https://github.com/HyunwooKim04/mail_auto_apply)
+2. Click the **Code** button.
+3. Select **Download ZIP**.
+4. After the download completes, unzip the file.  
+   You will get a folder named `mail_auto_apply-main`.
 
+---
 
+## ▶️ How to Run the Program
 
-### Gmail을 사용해주세요
+1. Open the `mail_auto_apply-main` folder.
+2. Right-click on the `auto_apply.py` file.
+3. Select **Open With** → **Python Launcher**.
+
+> ⚠️ Please make sure you are using **Gmail** for this program to work properly.
