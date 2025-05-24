@@ -3,8 +3,8 @@ import email
 import smtplib
 import os
 import random
-from email.mime.text import MIMEText
 import time
+from email.mime.text import MIMEText
 
 # === Email Settings ===
 IMAP_HOST = 'imap.gmail.com'
